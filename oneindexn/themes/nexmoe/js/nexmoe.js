@@ -91,7 +91,7 @@ var inst6 = new mdui.Dialog('#remoteupload-dialog');
 var inst7 = new mdui.Dialog('#progress');
 //文件上传方式选择
 var inst5 = new mdui.Select('#file_upload');
-$$('#file_upload').on('closed.mdui.select', function () {
+$('#file_upload').on('closed.mdui.select', function () {
     var  myselect=document.getElementById("file_upload");
     var index=myselect.selectedIndex ;
     var option = myselect.options[index].value;
