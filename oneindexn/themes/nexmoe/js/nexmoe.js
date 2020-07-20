@@ -99,12 +99,13 @@ $('#file_upload').on('closed.mdui.select', function () {
         inst2.open();
     }else if(option == "remote_upload"){
         inst6.open();
+    }else if(option=="offline_upload"){
+        window.open('/?/offline','_blank'); 
     }
   });
 
 //全局搜索
 var inst3 = new mdui.Dialog('#search_form');
-// method
 document.getElementById('search').addEventListener('click', function () {
     inst3.open();
 });
